@@ -16,4 +16,4 @@ jobs:
       - run: python -m pip install --upgrade pip
       - run: pip install -r requirements-dev.txt
       - run: python -m compileall app
-      - run: pytest -q
+      - run: python -m pytest -q
