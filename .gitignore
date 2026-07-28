@@ -1,0 +1,38 @@
+# Secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+API配置备忘录.txt
+*API*密钥*.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Streamlit and generated outputs
+.streamlit/
+outputs/reports/*
+!outputs/reports/.gitkeep
+*.log
+
+# Packaged runtimes and archives
+build/
+dist/
+_internal/
+*.spec
+*.exe
+*.zip
+*.7z
+
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
