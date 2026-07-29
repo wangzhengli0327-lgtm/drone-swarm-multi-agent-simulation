@@ -2,6 +2,7 @@
 
 [![CI](https://github.com/wangzhengli0327-lgtm/drone-swarm-multi-agent-simulation/actions/workflows/ci.yml/badge.svg)](https://github.com/wangzhengli0327-lgtm/drone-swarm-multi-agent-simulation/actions/workflows/ci.yml)
 [![Release](https://img.shields.io/github/v/release/wangzhengli0327-lgtm/drone-swarm-multi-agent-simulation)](https://github.com/wangzhengli0327-lgtm/drone-swarm-multi-agent-simulation/releases/latest)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://drone-swarm-multi-agent-simulation.streamlit.app/)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/UI-Streamlit-FF4B4B?logo=streamlit&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -22,6 +23,8 @@
 ![无人机集群动态多智能体协同仿真台运行结果](docs/assets/demo-overview.png)
 
 图中展示一次纯规则模式的可复现运行：系统完成 120 个抽象时间步，记录节点失效事件与动态风险姿态，并输出任务区、风险区、UAV 抽象平滑路径和覆盖指标。截图仅代表一个教学样例，不代表真实环境或平台性能。
+
+无需安装 Python，可直接打开[公开在线演示](https://drone-swarm-multi-agent-simulation.streamlit.app/)。首次访问若应用处于休眠状态，Streamlit Community Cloud 可能需要短暂唤醒；建议先使用“纯规则模式”体验完整流程。
 
 ## 项目亮点
 
