@@ -1,8 +1,10 @@
 # 抽象复杂环境下无人机集群多智能体协同管控仿真
 
 [![CI](https://github.com/wangzhengli0327-lgtm/drone-swarm-multi-agent-simulation/actions/workflows/ci.yml/badge.svg)](https://github.com/wangzhengli0327-lgtm/drone-swarm-multi-agent-simulation/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/wangzhengli0327-lgtm/drone-swarm-multi-agent-simulation)](https://github.com/wangzhengli0327-lgtm/drone-swarm-multi-agent-simulation/releases/latest)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/UI-Streamlit-FF4B4B?logo=streamlit&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-teaching%20prototype-orange)
 
 一个面向课程研究与教学展示的多智能体协同规划原型。项目在 `60 x 60` 抽象网格中模拟无人机集群执行区域持续覆盖任务，重点展示：
@@ -14,6 +16,12 @@
 
 > [!IMPORTANT]
 > 本项目只进行抽象仿真，不连接真实无人机，不使用真实地理坐标，也不生成真实飞控或部署指令。它不能用于真实任务规划、目标选择、武器使用或规避现实防御系统。
+
+## 界面预览
+
+![无人机集群动态多智能体协同仿真台运行结果](docs/assets/demo-overview.png)
+
+图中展示一次纯规则模式的可复现运行：系统完成 120 个抽象时间步，记录节点失效事件与动态风险姿态，并输出任务区、风险区、UAV 抽象平滑路径和覆盖指标。截图仅代表一个教学样例，不代表真实环境或平台性能。
 
 ## 项目亮点
 
@@ -148,7 +156,13 @@ pip install -r requirements.txt
 python -m streamlit run app/drone_swarm_workbench.py
 ```
 
-Windows 用户也可以双击 `run_app.bat`。Streamlit 默认会在浏览器中打开 `http://localhost:8501`。
+也可以使用云端兼容入口：
+
+```bash
+python -m streamlit run streamlit_app.py
+```
+
+Windows 用户还可以双击 `run_app.bat`。Streamlit 默认会在浏览器中打开 `http://localhost:8501`。
 
 ## 运行模式
 
@@ -197,6 +211,7 @@ Windows 用户也可以双击 `run_app.bat`。Streamlit 默认会在浏览器中
 ├── tests/                        # 基础回归测试
 ├── .github/workflows/ci.yml      # GitHub Actions
 ├── requirements.txt
+├── streamlit_app.py              # Streamlit Community Cloud 入口
 └── run_app.bat
 ```
 
@@ -255,4 +270,4 @@ python -m pytest -q
 
 ## 许可证
 
-当前仓库尚未附加开源许可证。源代码公开可见不等于已经授权复制、修改或分发；在许可证确定前，默认保留全部权利。
+本项目采用 [MIT License](LICENSE)。许可证只授予软件使用、修改和分发权，不改变本项目的教学仿真定位，也不表示作者认可任何超出安全边界的使用方式。
